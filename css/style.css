@@ -1,0 +1,294 @@
+:root {
+    --main-color: #212121;
+    --second-color: color: #757575;
+    --accent-color: #2196F3;
+    /* --button-first-color: #ffffff;
+    --button-second-color: #303030; */
+}
+
+body {
+    background-color: white;
+    color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+
+}
+
+.link-studio:hover,
+.link-portfolio:hover,
+.link-contacts:hover,
+.link-email:hover,
+.link-phone:hover,
+.adress-footer:hover,
+.mail-footer:hover,
+.phone-footer:hover {
+    color: var(--accent-color);
+}
+.link-studio{
+    color: var();
+}
+
+.link-studio-blue,
+.link-portfolio-blue{
+    color: var(--accent-color);
+}
+.hero-image {
+
+    background: #2F303A;
+}
+
+.hero-text {
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+
+.hero-button {
+
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+button:focus {
+    outline: #188CE8;
+}
+
+.hero-button-text {
+
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    color: white;
+
+}
+
+/* staff block studio */
+
+
+
+
+.occupation {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    letter-spacing: 0.03em;
+
+}
+
+.team-block {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    letter-spacing: 0.03em;
+}
+
+.first-name,
+.second-name,
+.third-name,
+.fourth-name,
+
+{
+font-weight: 500;
+font-size: 16px;
+line-height: calc(19/16);
+letter-spacing: 0.03em;
+}
+
+
+
+.member-position-one,
+.member-position-two,
+.member-position-three,
+.member-position-four {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19/16);
+    letter-spacing: 0.03em;
+    color: var(--s);
+}
+
+
+/* logo design */
+
+
+
+.logo {
+    font-weight: 700;
+    color: currentColor;
+    font-size: 26px;
+    line-height: calc(31/26);
+
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logo-down-white {
+    color: white;
+}
+
+.logo-up-black {
+    color: black;
+}
+
+
+/* Buttons portfolio */
+
+
+
+.button {
+    cursor: pointer;
+}
+
+.button-one,
+.button-two,
+.button-three,
+.button-four,
+.button-five {
+
+    font-weight: 500;
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+}
+
+
+/* under hero studio page */
+
+
+.item-heading-one>h2,
+.item-heading-two>h2,
+.item-heading-three>h2,
+.item-heading-four>h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.item-heading-one>p,
+.item-heading-two>p,
+.item-heading-three>p,
+.item-heading-four>p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+
+    color: var(--second-color);
+}
+
+/* Projects portfolio */
+
+
+
+.technok,
+.poster,
+.restaurant,
+.proect-prime,
+.proect-box,
+.inspiration,
+.limited,
+.proect-lab,
+.groving {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+}
+
+.technok-text,
+.poster-text,
+.restaurant-text,
+.proect-prime-text,
+.proect-box-text,
+.inspiration-text,
+.limited-text,
+.proect-lab-text,
+.groving-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+
+    color: var(--second-color);
+}
+
+
+
+/* подвал */
+
+
+
+.footer {
+
+    background: #2F303A;
+}
+
+.adress-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.mail-footer,
+.phone-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
