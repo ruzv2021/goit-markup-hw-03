@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
 :root {
     --main-color: #212121;
     --second-color: color: #757575;
@@ -24,8 +34,19 @@ a {
     color: currentColor;
 }
 
-li {
+ul,
+ul>li {
     list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
 }
 
 .navigation {
@@ -36,6 +57,26 @@ li {
     color: var(--main-color);
 
 }
+nav.container{
+    border-bottom: #ECECEC;
+}
+
+section{
+    padding:94px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 0px;
+    outline: 1px solid #ECECEC;
+}
+
+.navigation.container {
+display: flex;
+align-items: center;
+}
+
 
 .link-studio:hover,
 .link-portfolio:hover,
@@ -47,42 +88,70 @@ li {
 .phone-footer:hover {
     color: var(--accent-color);
 }
-.link-studio{
+
+.link-studio {
     color: var();
 }
 
 .link-studio-blue,
-.link-portfolio-blue{
+.link-portfolio-blue {
     color: var(--accent-color);
 }
-.hero-image {
+
+
+.hero {
 
     background: #2F303A;
+    width: 1600px;
+    min-height: 600px;
+    padding: 200px 452px 200px 452px;
+
 }
+
+/* .hero .container {
+    display: flex;
+} */
 
 .hero-text {
 
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60/44);
-
-
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: #FFFFFF;
 
 }
 
 
 .hero-button {
-
+    display: inline-block;
+    width: 216px;
+    height: 50px;
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 24px;
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+
+    font-size: 16px;
+    line-height: calc(30/16);
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    color: white;
 
 }
+
+/* .hero-button-text{
+    padding-bottom: 30px;
+    padding: 200px 452px 280px 452px;
+} */
 
 button:hover {
     background-color: var(--accent-color);
@@ -92,21 +161,7 @@ button:focus {
     outline: #188CE8;
 }
 
-.hero-button-text {
-
-    font-size: 16px;
-    line-height: calc(30/16);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    font-weight: 700;
-    color: white;
-
-}
-
 /* staff block studio */
-
 
 
 
@@ -128,13 +183,11 @@ button:focus {
 .first-name,
 .second-name,
 .third-name,
-.fourth-name,
-
-{
-font-weight: 500;
-font-size: 16px;
-line-height: calc(19/16);
-letter-spacing: 0.03em;
+.fourth-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+    letter-spacing: 0.03em;
 }
 
 
@@ -194,6 +247,11 @@ letter-spacing: 0.03em;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26/16);
+    display: inline-block;
+    width: 125px;
+    height: 38px;
+    border: none;
+    padding: 6px 22px;
 }
 
 
