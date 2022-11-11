@@ -50,10 +50,6 @@ p {
     margin: 0;
 }
 
-section {
-    padding: 94px;
-}
-
 .button {
     cursor: pointer;
 }
@@ -65,12 +61,12 @@ section {
     /* outline: 1px solid #ECECEC; */
 }
 
-
-.container .site-nav {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #ECECEC
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
+
 
 .navigation {
     font-weight: 500;
@@ -78,6 +74,8 @@ section {
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--main-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .site-nav {
@@ -99,12 +97,6 @@ section {
     margin-left: auto;
 }
 
-nav.item,
-.item-logo {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-}
 
 
 
@@ -128,15 +120,21 @@ nav.item,
     color: var(--accent-color);
 }
 
+.link-email {
+    color: #757575;
+}
+
+.link-phone {
+    color: #757575;
+}
 
 
 .hero {
 
     background: #2F303A;
-    padding: 200px 452px 200px 452px;
     text-align: center;
-    width: 1600px;
-
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 
@@ -145,6 +143,8 @@ nav.item,
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60/44);
+    margin-right: auto;
+    margin-left: auto;
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -164,6 +164,8 @@ nav.item,
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
 
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -181,6 +183,7 @@ nav.item,
 
 button:hover {
     background-color: var(--accent-color);
+    color: #FFFFFF;
 }
 
 button:focus {
@@ -193,32 +196,47 @@ button:focus {
 /* about under hero */
 
 
-.container .under-hero {
+.under-hero {
     display: flex;
 
 }
 
-.under-hero>h2 {
-    margin-bottom: 10px;
+.under-hero > li {
+    width: 270px;
+    margin-right: 30px;
 }
 
-.under-hero .item:not(:first-child) {
-    margin-left: 30px;
+.under-hero > li:last-child {
+    margin-right: 0px;
+}
+
+.about-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #212121;
+}
+
+.about-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 
 /* staff block studio */
 
 
-
-.occupation {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
-    letter-spacing: 0.03em;
-
+.sec-work{
+    padding-top: 0;
 }
-
 .photos-occupation .photo:not(:first-child) {
     margin-left: 30px;
 }
@@ -226,15 +244,38 @@ button:focus {
 .title-occupation {
     margin-bottom: 50px;
     text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
 }
+.comand-people {
+            background-color: #F5F4FA;
+        }
+
 
 /* team block */
 
 .title-team-block {
     margin-bottom: 50px;
     text-align: center;
-}
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 
+    color: #212121;
+}
+.staff {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 .team-block {
     font-weight: 700;
     font-size: 36px;
@@ -251,11 +292,16 @@ button:focus {
 .second-name,
 .third-name,
 .fourth-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-}
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
 
 
 
@@ -263,11 +309,15 @@ button:focus {
 .member-position-two,
 .member-position-three,
 .member-position-four {
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(19/16);
+    line-height: 1.19;
+    text-align: center;
     letter-spacing: 0.03em;
-    color: var(--s);
+    color: #757575;
+    margin-bottom: 30px;
+
 }
 
 .photos-occupation {
@@ -301,8 +351,10 @@ button:focus {
     color: black;
 }
 
+.nav-port {
+    border: 1px solid #ECECEC;
 
-
+}
 /* Buttons portfolio */
 
 
@@ -333,9 +385,19 @@ button:focus {
 .buttons-portfolio {
     display: flex;
     align-items: center;
-    width: 575px;
+    justify-content: center;
+    margin-bottom: 34px;}
+    
+    .buttons-portfolio  li{ 
+    margin-right: 8px; 
 }
 
+.buttons-portfolio li {
+    margin-right: 8px;
+}
+.buttons-portfolio li:last-child {
+    margin-right: 0;
+}
 
 .buttons-portfolio>.button:not(:first-child) {
     margin-left: 30px;
@@ -347,12 +409,6 @@ button:focus {
     margin-left: auto;
 }
 
-nav.item,
-.item-logo {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-}
 
 
 
@@ -368,12 +424,9 @@ nav.item,
 }
 
 .our-projects .example {
-    width: 370px;
-    margin-right: 30px;
+    margin-right: 27px;
     margin-bottom: 30px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #EEEEEE;
+    border: 1px solid #EEEEEE;
 
 }
 
@@ -424,6 +477,9 @@ nav.item,
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .technok-text,
@@ -436,11 +492,13 @@ nav.item,
 .proect-lab-text,
 .groving-text {
     font-weight: 400;
+    margin-left: 24px;
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    color: #757575;
 
-    color: var(--second-color);
 }
 
 
@@ -449,26 +507,12 @@ nav.item,
 
 
 
-.footer>.container {
-
-    width: 1600px;
-    min-height: 252px;
-    background: #2F303A;
-}
-
-.footer>.container>.logo-down {
-
+.footer {
+    background-color: #2F303A;
     padding-top: 60px;
-    padding-right: 1240px;
-    padding-bottom: 20px;
-    padding-left: 215px;
-}
-
-.footer>.container>.adress {
-    padding-left: 215px;
-    padding-right: 1144px;
     padding-bottom: 60px;
 }
+
 
 .adress-footer {
     font-style: normal;
